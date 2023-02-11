@@ -1,12 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.scss";
-import configData from "/config.json";
 
 export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container">
-                <a className="navbar-brand" href="#!">{configData.BLOG_NAME}</a>
+                <a className="navbar-brand" href="#!">{import.meta.env.VITE_BLOG_NAME}</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
